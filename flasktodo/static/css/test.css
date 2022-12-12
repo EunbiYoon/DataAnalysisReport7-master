@@ -1,0 +1,76 @@
+
+body{
+  position:relative;
+  z-index:1 !important;
+}
+/* .multi-selector style */
+input{
+  outline: none;
+  border: none;
+  z-index:4;
+}
+.multi-selector{
+  width: max-content;
+  padding: 0 1rem;
+  height:2.3rem;
+  position:relative;
+  z-index:2 !important;
+}
+.select-field{
+  border: 1px solid rgb(187, 187, 187);
+}
+.select-field,.task,.list{
+  width: 100%;
+  background-color: white;
+  padding: 0.3rem;
+}
+.list{
+  box-shadow: 0 30px 60px rgb(0,0,0,0.2);
+  display: none;
+}
+.down-arrow{
+  font-size: 1.2rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.task{
+  display: block;
+  padding-left: 10px;
+}
+.task span{
+  float: right;
+  font-size: 0.6rem;
+  padding-top: 6px;
+}
+.task:hover{
+  background-color: aliceblue;
+}
+.show{
+  display: block;
+}
+.rotate180{
+  transform: rotate(-60deg);
+}
+
+label .submit-btn{
+  vertical-align: right;
+}
+
+
+.button_text{
+  font-size: 1rem;
+  text-align: center;
+
+}
+
+
+.hazard-graph{
+  position:relative;
+  z-index:1;
+}
+
+btn-group open.button.caret
+{
+	display:none;
+}
