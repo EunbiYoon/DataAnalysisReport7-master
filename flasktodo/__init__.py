@@ -34,7 +34,9 @@ def create_app():
         SQLALCHEMY_TRACK_MODIFICATIONS=False
     )
     
+    app.register_error_handler(401, handle_401)
     app.register_error_handler(404, handle_404)
+    app.register_error_handler(500, handle_500)
     
     from flasktodo.models import db 
     db.init_app(app)

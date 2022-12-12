@@ -289,22 +289,22 @@ def kpi():
 @bp.route("/report")
 @login_required
 def report():
-    return render_template('carddetail/report.html')
+    return render_template('card/report.html')
 
 @bp.route("/email")
 @login_required
 def email():
-    return render_template('carddetail/email.html')
+    return render_template('card/email.html')
 
 @bp.route("/logic")
 @login_required
 def logic():
-    return render_template('carddetail/logic.html')
+    return render_template('card/logic.html')
 
 @bp.route("/deploy")
 @login_required
 def deploy():
-    return render_template('carddetail/deploy.html')
+    return render_template('card/deploy.html')
 
 #layout
 @bp.route("/layout_static")
