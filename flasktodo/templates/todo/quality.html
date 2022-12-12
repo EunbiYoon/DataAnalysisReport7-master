@@ -143,43 +143,43 @@
                                         </div>
                                         <div class="list">
                                             <label for="task1" class="task">
-                                                <input type="checkbox" name="symptom" value="DRAIN">Drain
+                                                <input type="checkbox" name="symptom1" value="DRAIN">Drain
                                             </label>
                                             <label for="task2" class="task">
-                                                <input type="checkbox" name="symptom" value="EXPLANATION">Explanation
+                                                <input type="checkbox" name="symptom1" value="EXPLANATION">Explanation
                                             </label>
                                             <label for="task3" class="task">
-                                                <input type="checkbox" name="symptom" value="EXTERIOR">Exterior
+                                                <input type="checkbox" name="symptom1" value="EXTERIOR">Exterior
                                             </label>
                                             <label for="task4" class="task">
-                                                <input type="checkbox" name="symptom" value="FILLING">Filling
+                                                <input type="checkbox" name="symptom1" value="FILLING">Filling
                                             </label>
                                             <label for="task5" class="task">
-                                                <input type="checkbox" name="symptom" value="LEAK">Leak
+                                                <input type="checkbox" name="symptom1" value="LEAK">Leak
                                             </label>
                                             <label for="task6" class="task">
-                                                <input type="checkbox" name="symptom" value="LID">Lid
+                                                <input type="checkbox" name="symptom1" value="LID">Lid
                                             </label>
                                             <label for="task7" class="task">
-                                                <input type="checkbox" name="symptom" value="MISASSEMBLY">Misassembly
+                                                <input type="checkbox" name="symptom1" value="MISASSEMBLY">Misassembly
                                             </label>
                                             <label for="task8" class="task">
-                                                <input type="checkbox" name="symptom" value="MOTOR">Motor
+                                                <input type="checkbox" name="symptom1" value="MOTOR">Motor
                                             </label>
                                             <label for="task9" class="task">
-                                                <input type="checkbox" name="symptom" value="NOISE/VIBRATION">Noise/Vibration
+                                                <input type="checkbox" name="symptom1" value="NOISE/VIBRATION">Noise/Vibration
                                             </label>
                                             <label for="task10" class="task">
-                                                <input type="checkbox" name="symptom" value="OTHER">Other
+                                                <input type="checkbox" name="symptom1" value="OTHER">Other
                                             </label>
                                             <label for="task11" class="task">
-                                                <input type="checkbox" name="symptom" value="PCB">PCB
+                                                <input type="checkbox" name="symptom1" value="PCB">PCB
                                             </label>
                                             <label for="task12" class="task">
-                                                <input type="checkbox" name="symptom" value="RETURN">Return
+                                                <input type="checkbox" name="symptom1" value="RETURN">Return
                                             </label>
                                             <label for="button" class="task">
-                                                <input type="submit" class="submit-btn">
+                                                <input type="submit" value="submit" name="action1"/>
                                             </label>
                                         </div>
                                     </div>
@@ -197,6 +197,56 @@
                                     Hazard Graph - Quality Indicator
                             </div>
                             <div class="card-body">
+                                <!---------List of checkboxes and options----------->
+                                <form action="/quality" method="POST">
+                                    <div class="multi-selector">
+                                        <div class="select-field2">
+                                            <input type="text" name="" placeholder="Choose Symptoms" id="" class="input-selector">
+                                            <span class="down-arrow2">&blacktriangledown;</span>
+                                        </div>
+                                        <div class="list2">
+                                            <label for="task1" class="task">
+                                                <input type="checkbox" name="symptom2" value="DRAIN">Drain
+                                            </label>
+                                            <label for="task2" class="task">
+                                                <input type="checkbox" name="symptom2" value="EXPLANATION">Explanation
+                                            </label>
+                                            <label for="task3" class="task">
+                                                <input type="checkbox" name="symptom2" value="EXTERIOR">Exterior
+                                            </label>
+                                            <label for="task4" class="task">
+                                                <input type="checkbox" name="symptom2" value="FILLING">Filling
+                                            </label>
+                                            <label for="task5" class="task">
+                                                <input type="checkbox" name="symptom2" value="LEAK">Leak
+                                            </label>
+                                            <label for="task6" class="task">
+                                                <input type="checkbox" name="symptom2" value="LID">Lid
+                                            </label>
+                                            <label for="task7" class="task">
+                                                <input type="checkbox" name="symptom2" value="MISASSEMBLY">Misassembly
+                                            </label>
+                                            <label for="task8" class="task">
+                                                <input type="checkbox" name="symptom2" value="MOTOR">Motor
+                                            </label>
+                                            <label for="task9" class="task">
+                                                <input type="checkbox" name="symptom2" value="NOISE/VIBRATION">Noise/Vibration
+                                            </label>
+                                            <label for="task10" class="task">
+                                                <input type="checkbox" name="symptom2" value="OTHER">Other
+                                            </label>
+                                            <label for="task11" class="task">
+                                                <input type="checkbox" name="symptom2" value="PCB">PCB
+                                            </label>
+                                            <label for="task12" class="task">
+                                                <input type="checkbox" name="symptom2" value="RETURN">Return
+                                            </label>
+                                            <label for="button" class="task">
+                                                <input type="submit" value="submit" name="action2">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
                                 <div class="hazard-graph">
                                     <canvas id="myTest" width="100%" height="30" class=""></canvas>
                                 </div>
@@ -212,6 +262,57 @@
                                             AAR & PPM - Quality Indicator
                                     </div>
                                     <div class="card-body">
+                                        <form action="/quality" method="POST">
+                                            <div class="multi-selector">
+                                                <div class="select-field3">
+                                                    <input type="text" name="" placeholder="Choose Symptoms" id="" class="input-selector">
+                                                    <span class="down-arrow3">&blacktriangledown;</span>
+                                                </div>
+                                                <div class="list3">
+                                                    <label for="task1" class="task">
+                                                        <input type="checkbox" name="symptom3" value="DRAIN">Drain
+                                                    </label>
+                                                    <label for="task2" class="task">
+                                                        <input type="checkbox" name="symptom3" value="EXPLANATION">Explanation
+                                                    </label>
+                                                    <label for="task3" class="task">
+                                                        <input type="checkbox" name="symptom3" value="EXTERIOR">Exterior
+                                                    </label>
+                                                    <label for="task4" class="task">
+                                                        <input type="checkbox" name="symptom3" value="FILLING">Filling
+                                                    </label>
+                                                    <label for="task5" class="task">
+                                                        <input type="checkbox" name="symptom3" value="LEAK">Leak
+                                                    </label>
+                                                    <label for="task6" class="task">
+                                                        <input type="checkbox" name="symptom3" value="LID">Lid
+                                                    </label>
+                                                    <label for="task7" class="task">
+                                                        <input type="checkbox" name="symptom3" value="MISASSEMBLY">Misassembly
+                                                    </label>
+                                                    <label for="task8" class="task">
+                                                        <input type="checkbox" name="symptom3" value="MOTOR">Motor
+                                                    </label>
+                                                    <label for="task9" class="task">
+                                                        <input type="checkbox" name="symptom3" value="NOISE/VIBRATION">Noise/Vibration
+                                                    </label>
+                                                    <label for="task10" class="task">
+                                                        <input type="checkbox" name="symptom3" value="OTHER">Other
+                                                    </label>
+                                                    <label for="task11" class="task">
+                                                        <input type="checkbox" name="symptom3" value="PCB">PCB
+                                                    </label>
+                                                    <label for="task12" class="task">
+                                                        <input type="checkbox" name="symptom3" value="RETURN">Return
+                                                    </label>
+                                                    <label for="button" class="task">
+                                                        <input type="submit" value="submit" name="action3">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="card-body">
                                         {{ aar_table_html|safe }}
                                     </div>
                                     <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
@@ -223,6 +324,57 @@
                                     <div class="card-header">
                                         <i class="fas fa-chart-line me-1"></i>
                                         FFR & FDR - Quality Indicator
+                                    </div>
+                                    <div class="card-body">
+                                        <form action="/quality" method="POST">
+                                            <div class="multi-selector">
+                                                <div class="select-field4">
+                                                    <input type="text" name="" placeholder="Choose Symptoms" id="" class="input-selector">
+                                                    <span class="down-arrow4">&blacktriangledown;</span>
+                                                </div>
+                                                <div class="list4">
+                                                    <label for="task1" class="task">
+                                                        <input type="checkbox" name="symptom4" value="DRAIN">Drain
+                                                    </label>
+                                                    <label for="task2" class="task">
+                                                        <input type="checkbox" name="symptom4" value="EXPLANATION">Explanation
+                                                    </label>
+                                                    <label for="task3" class="task">
+                                                        <input type="checkbox" name="symptom4" value="EXTERIOR">Exterior
+                                                    </label>
+                                                    <label for="task4" class="task">
+                                                        <input type="checkbox" name="symptom4" value="FILLING">Filling
+                                                    </label>
+                                                    <label for="task5" class="task">
+                                                        <input type="checkbox" name="symptom4" value="LEAK">Leak
+                                                    </label>
+                                                    <label for="task6" class="task">
+                                                        <input type="checkbox" name="symptom4" value="LID">Lid
+                                                    </label>
+                                                    <label for="task7" class="task">
+                                                        <input type="checkbox" name="symptom4" value="MISASSEMBLY">Misassembly
+                                                    </label>
+                                                    <label for="task8" class="task">
+                                                        <input type="checkbox" name="symptom4" value="MOTOR">Motor
+                                                    </label>
+                                                    <label for="task9" class="task">
+                                                        <input type="checkbox" name="symptom4" value="NOISE/VIBRATION">Noise/Vibration
+                                                    </label>
+                                                    <label for="task10" class="task">
+                                                        <input type="checkbox" name="symptom4" value="OTHER">Other
+                                                    </label>
+                                                    <label for="task11" class="task">
+                                                        <input type="checkbox" name="symptom4" value="PCB">PCB
+                                                    </label>
+                                                    <label for="task12" class="task">
+                                                        <input type="checkbox" name="symptom4" value="RETURN">Return
+                                                    </label>
+                                                    <label for="button" class="task">
+                                                        <input type="submit" value="submit" name="action4">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div class="card-body">
                                         <canvas id="ffrchart" width="100%" height="39.2">
@@ -248,20 +400,17 @@
                                                 var FFR4YLegend = '{{ FFR4YLegend }}';
                                                 var FDR4YValues = '{{ FDR4YValues | tojson }}';
                                                 var FDR4YLegend = '{{ FDR4YLegend }}';
-
                                             
-                                              
                                             </script>
                                         </canvas>
                                     </div>
                                     <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                                 </div>
+
+
+
                             </div>
                         </div>
-
-            
-
-
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">

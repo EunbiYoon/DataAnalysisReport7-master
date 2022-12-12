@@ -279,7 +279,7 @@ def quality():
             print("ERROR")
 
 
-    return render_template('todo/index.html', sort_pivot_html=sort_pivot_html, aar_table_html=aar_table_html,
+    return render_template('todo/quality.html', sort_pivot_html=sort_pivot_html, aar_table_html=aar_table_html,
     ffr_label=ffr_label,FFR1YValues=FFR1YValues, FFR1YLegend=FFR1YLegend,FDR1YValues=FDR1YValues,FDR1YLegend=FDR1YLegend,
     FFR2YValues=FFR2YValues, FFR2YLegend=FFR2YLegend,FDR2YValues=FDR2YValues,FDR2YLegend=FDR2YLegend,
     FFR3YValues=FFR3YValues, FFR3YLegend=FFR3YLegend,FDR3YValues=FDR3YValues,FDR3YLegend=FDR3YLegend,
