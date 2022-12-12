@@ -16,8 +16,14 @@ from flask_migrate import Migrate
 
 migrate = Migrate()
 
+def handle_401(e):
+    return render_template('error/401.html'), 401
+
 def handle_404(e):
     return render_template('error/404.html'), 404
+
+def handle_500(e):
+    return render_template('error/500.html'), 500
 
 def create_app():
     app = Flask(__name__, instance_relative_config=True)

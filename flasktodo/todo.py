@@ -145,25 +145,25 @@ def index():
     FFR4YValues=FFR4YValues, FFR4YLegend=FFR4YLegend,FDR4YValues=FDR4YValues,FDR4YLegend=FDR4YLegend)
 
 
-@bp.route("/charts")
+@bp.route("/trend")
 @login_required
-def charts():
+def trend():
     return render_template('todo/charts.html', ABlabels=ABlabels,
     Avalues2M=Avalues2M, Avalues1M=Avalues1M, Avalues0M=Avalues0M,
     Bvalues2M=Bvalues2M,Bvalues1M=Bvalues1M,Bvalues0M=Bvalues0M,
     Plabels=Plabels,Pvalues=Pvalues,
     legend2M=legend2M, legend1M=legend1M, legend0M=legend0M)
 
-@bp.route("/tables")
+@bp.route("/list")
 @login_required
-def tables():
+def list():
     return render_template('todo/tables.html',svc_data_html=svc_data_html)
 
 
 
-@bp.route("/quality",methods=["POST","GET"])
+@bp.route("/kpi",methods=["POST","GET"])
 @login_required
-def quality():
+def kpi():
         ####################### INITIAL #####################
     # symptoms
     initial_data=["DRAIN","EXPLANATION","EXTERIOR","FILLING","LEAK","LID","MISASSEMBLY","MOTOR","NOISE/VIBRATION","OTHER","PCB","RETURN"]
@@ -284,6 +284,27 @@ def quality():
     FFR2YValues=FFR2YValues, FFR2YLegend=FFR2YLegend,FDR2YValues=FDR2YValues,FDR2YLegend=FDR2YLegend,
     FFR3YValues=FFR3YValues, FFR3YLegend=FFR3YLegend,FDR3YValues=FDR3YValues,FDR3YLegend=FDR3YLegend,
     FFR4YValues=FFR4YValues, FFR4YLegend=FFR4YLegend,FDR4YValues=FDR4YValues,FDR4YLegend=FDR4YLegend)
+
+#card
+@bp.route("/report")
+@login_required
+def report():
+    return render_template('carddetail/report.html')
+
+@bp.route("/email")
+@login_required
+def email():
+    return render_template('carddetail/email.html')
+
+@bp.route("/logic")
+@login_required
+def logic():
+    return render_template('carddetail/logic.html')
+
+@bp.route("/deploy")
+@login_required
+def deploy():
+    return render_template('carddetail/deploy.html')
 
 #layout
 @bp.route("/layout_static")

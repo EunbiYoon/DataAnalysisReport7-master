@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Dashboard Admin</title>
+        <title>Admin Dashboard</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -30,7 +30,6 @@
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
-                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                         <li><hr class="dropdown-divider" /></li>
                         {% if current_user.is_authenticated %}
                         <li><a class="dropdown-item" href="{{ url_for('auth.logout') }}">Logout</a></li>
@@ -94,15 +93,15 @@
                                 </nav>
                             </div>
                             <div class="sb-sidenav-menu-heading">Addons</div>
-                            <a class="nav-link" href="{{ url_for('todo.charts') }}">
+                            <a class="nav-link" href="{{ url_for('todo.trend') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Service & Sales Trend
                             </a>
-                            <a class="nav-link" href="{{ url_for('todo.quality') }}">
+                            <a class="nav-link" href="{{ url_for('todo.kpi') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-calculator"></i></div>
                                 Product Quality KPI
                             </a>
-                            <a class="nav-link" href="{{ url_for('todo.tables') }}">
+                            <a class="nav-link" href="{{ url_for('todo.list') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Total Service Review
                             </a>
@@ -126,7 +125,7 @@
                                 <div class="card bg-primary text-black mb-4">
                                     <div class="card-body2">Daily Report Review</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <a class="small text-white stretched-link" href="{{ url_for('todo.report') }}">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -135,25 +134,25 @@
                                 <div class="card bg-warning text-black mb-4">
                                     <div class="card-body2">Automatic Email Sending</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <a class="small text-white stretched-link" href="{{ url_for('todo.email') }}">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-md-6">
-                                <div class="card bg-success text-black mb-4">
+                                <div class="card bg-success text-white mb-4">
                                     <div class="card-body2">Logic Of System</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <a class="small text-white stretched-link" href="{{ url_for('todo.logic') }}">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-md-6">
-                                <div class="card bg-danger text-black mb-4">
+                                <div class="card bg-danger text-white mb-4">
                                     <div class="card-body2">Deploy Method</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <a class="small text-white stretched-link" href="{{ url_for('todo.deploy') }}">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>

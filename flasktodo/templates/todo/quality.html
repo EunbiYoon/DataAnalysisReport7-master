@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Dashboard - SB Admin</title>
+        <title>Product Quality KPI</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="../static/css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -30,9 +30,8 @@
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
-                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('auth.logout') }}">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -90,15 +89,15 @@
                                 </nav>
                             </div>
                             <div class="sb-sidenav-menu-heading">Addons</div>
-                            <a class="nav-link" href="{{ url_for('todo.charts') }}">
+                            <a class="nav-link" href="{{ url_for('todo.trend') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Service & Sales Trend
                             </a>
-                            <a class="nav-link" href="{{ url_for('todo.quality') }}">
+                            <a class="nav-link" href="{{ url_for('todo.kpi') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-calculator"></i></div>
                                 Product Quality KPI
                             </a>
-                            <a class="nav-link" href="{{ url_for('todo.tables') }}">
+                            <a class="nav-link" href="{{ url_for('todo.list') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Total Service Review
                             </a>
@@ -113,10 +112,10 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Customer Total Service Report</h1>
+                        <h1 class="mt-4">Product Quality Key Performance Indicators</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="{{ url_for('todo.index') }}">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Calculator</li>
+                            <li class="breadcrumb-item active">KPI</li>
                         </ol>
                         <div class="card mb-4">
                             <div class="card-body">
