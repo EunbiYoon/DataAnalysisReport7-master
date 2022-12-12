@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Tables - SB Admin</title>
+        <title>Total Service Report</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="{{ url_for('todo.index') }}">Start Bootstrap</a>
+            <a class="navbar-brand ps-3" href="{{ url_for('todo.index') }}">Service & Sales Report</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -95,13 +95,13 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Service & Sales Trend
                             </a>
-                            <a class="nav-link" href="{{ url_for('todo.tables') }}">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Total Service Reports
-                            </a>
                             <a class="nav-link" href="{{ url_for('todo.quality') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-calculator"></i></div>
-                                Quality Indicator
+                                Service Quality KPI
+                            </a>
+                            <a class="nav-link" href="{{ url_for('todo.tables') }}">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Total Service Report
                             </a>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                            <div class="text-muted">Copyright &copy; Eunbi Yoon 2022</div>
                             <div>
                                 <a href="#">Privacy Policy</a>
                                 &middot;
