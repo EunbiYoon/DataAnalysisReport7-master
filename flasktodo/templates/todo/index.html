@@ -8,7 +8,7 @@
         <meta name="author" content="" />
         <title>Dashboard Admin</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-        <link href="../static/css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
@@ -100,11 +100,11 @@
                             </a>
                             <a class="nav-link" href="{{ url_for('todo.quality') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-calculator"></i></div>
-                                Service Quality KPI
+                                Product Quality KPI
                             </a>
                             <a class="nav-link" href="{{ url_for('todo.tables') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Total Service Report
+                                Total Service Review
                             </a>
                         </div>
                     </div>
@@ -396,7 +396,9 @@
                                         </form>
                                     </div>
                                     <div class="card-body">
-                                        {{ aar_table_html|safe }}
+                                        <div class="aar-table">
+                                            {{ aar_table_html|safe }}
+                                        </div>
                                     </div>
                                     <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                                 </div>
